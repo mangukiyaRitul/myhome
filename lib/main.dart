@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ritul/collingpage.dart';
 import 'package:ritul/myhomepage.dart';
 import 'package:ritul/sudocu.dart';
 import 'package:ritul/tictac.dart';
@@ -24,6 +25,7 @@ class _MyAppState extends State<MyApp> {
       routes: {
         'sudocu':(context) => sudocu(  ),
         'tictoc':(context) => tictoc(  ),
+        'collingpage':(context) => collingpage(),
 
       },
       home:MyHomePage(),debugShowCheckedModeBanner: false,

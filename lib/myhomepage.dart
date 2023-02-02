@@ -13,9 +13,9 @@ class _MyHomePageState extends State<MyHomePage> {
     var arrpages =[
       'sudocu',
       'tictoc',
-      '',
-      '',
-      '',
+      'collingpage',
+      '  ',
+      '  ',
     ];
     return Scaffold(
       appBar: AppBar(title: Text('My App'),),
