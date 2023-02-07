@@ -30,11 +30,11 @@ class _collingpageState extends State<collingpage> {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  margin: EdgeInsets.fromLTRB(0, 0, 0, 100),
                   child: Text("Calling...",style: TextStyle(color: Colors.white)),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(0, 40, 0, 0 ),
+                  margin: EdgeInsets.fromLTRB(0, 0, 0, 0 ),
                   child: Text("Ritul Mangukiya",
                   style: TextStyle(
                     fontSize: 20,
@@ -43,7 +43,7 @@ class _collingpageState extends State<collingpage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(0, 4, 0, 0),
+                  margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
                   child: Text("Home +91 9106045402",
                     style: TextStyle(
                       fontSize: 15  ,
@@ -72,22 +72,22 @@ class _collingpageState extends State<collingpage> {
                           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Container(
-                              padding: EdgeInsets.fromLTRB(0, 50, 0, 5),
+                              padding: EdgeInsets.fromLTRB(0, 50, 0,0),
 
                               child: Column(
                                  // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Icon(Icons.add,color: Colors.white30),
+                                  Icon(Icons.add,color: Colors.white30,size: 40,),
                                   Text('Add call',style: TextStyle(color: Colors.white30)),
                                 ],
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.fromLTRB(50, 50, 50, 5),
+                              padding: EdgeInsets.fromLTRB(55, 50, 55, 5),
                               child: Column(
                                 // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Icon(Icons.videocam_rounded,color: Colors.white30),
+                                  Icon(Icons.videocam_rounded,color: Colors.white30,size: 40,),
                                   Text('Video call',style: TextStyle(color: Colors.white30)),
                                 ],
                               ),
@@ -97,7 +97,7 @@ class _collingpageState extends State<collingpage> {
 
                               child: Column(
                                 children: [
-                                  Icon(Icons.bluetooth,color: Colors.white,),
+                                  Icon(Icons.bluetooth,color: Colors.white,size: 40,),
                                   Text('Bluetooth',style: TextStyle(color: Colors.white)),
                                 ],
                               ),
@@ -124,7 +124,7 @@ class _collingpageState extends State<collingpage> {
                               child: Column(
                                 // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Icon(Icons.volume_up_rounded,color: Colors.green),
+                                  Icon(Icons.volume_up_rounded,color: Colors.green,size: 40,),
                                   Text('Speaker',style: TextStyle(color: Colors.white)),
                                 ],
                               ),
@@ -134,7 +134,7 @@ class _collingpageState extends State<collingpage> {
                               child: Column(
                                 // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Icon(Icons.mic_off_sharp,color: Colors.white30),
+                                  Icon(Icons.mic_off_sharp,color: Colors.white30,size: 40,),
                                   Text('Mute',style: TextStyle(color: Colors.white30)),
                                 ],
                               ),
@@ -144,7 +144,9 @@ class _collingpageState extends State<collingpage> {
 
                               child: Column(
                                 children: [
-                                  Icon(Icons.apps_sharp,color: Colors.white),
+                                  Icon(Icons.dialpad_rounded
+
+                                      ,color: Colors.white,size: 40),
                                   Text('Keypad',style: TextStyle(color: Colors.white)),
 
                                 ],

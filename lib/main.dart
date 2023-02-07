@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:ritul/2insta.dart';
 import 'package:ritul/collingpage.dart';
+import 'package:ritul/listview.dart';
 import 'package:ritul/myhomepage.dart';
 import 'package:ritul/sudocu.dart';
 import 'package:ritul/tictac.dart';
+
+import 'instagram.dart';
 
 void main ()
 {
@@ -23,9 +27,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
 
       routes: {
-        'sudocu':(context) => sudocu(  ),
-        'tictoc':(context) => tictoc(  ),
+        'sudocu':(context) => sudocu(),
+        'tictoc':(context) => tictoc(),
         'collingpage':(context) => collingpage(),
+        'listview':(context) => listview(),
+        'instagram':(context) => instagram(),
+        'insta':(context) =>insta(),
 
       },
       home:MyHomePage(),debugShowCheckedModeBanner: false,

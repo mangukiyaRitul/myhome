@@ -14,14 +14,18 @@ class _MyHomePageState extends State<MyHomePage> {
       'sudocu',
       'tictoc',
       'collingpage',
-      '  ',
-      '  ',
+      'listview',
+      'instagram',
+      'insta',
     ];
     return Scaffold(
       appBar: AppBar(title: Text('My App'),),
       body: GridView.builder(itemCount: arrpages.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,crossAxisSpacing: 10,mainAxisSpacing: 10),
+            crossAxisCount: 3,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10) ,
+
         itemBuilder: (context, index) {
           return Container(color: Colors.amber,child: TextButton(onPressed:() {
             Navigator.pushNamed(context, arrpages[index]);
