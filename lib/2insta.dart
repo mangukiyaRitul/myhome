@@ -13,7 +13,7 @@ class _instaState extends State<insta> {
   @override
   List a=["Fenil padmani","Meet Sutariya","Ramya__Official","yug","Utsav"," Raj ","Neer Gheveriya","Sahil shekhda","Nayan Chauhan","Ved Gadhiya","Yash Mangukiya","Abhi Mangukiya","Nayan Sutariya","Ram Mangukiya","Darshan Mangukiya","gautam_patel","||_._sardar_._||","Aarin Godhani","Sahil Shekhda","Dhruv Jogani","keyur Sondagar","Darshan Vavdiya","Meet Sutariya","Ankit Sutariya","Yash Mangukiya","Abhi Mangukiya","Nayan Sutariya","Ram Mangukiya","Meet katrodiya",];
   List b=["kem 2h","Sent 1h ago","Sent Sunday","Sent unique.facts 11's reel.2d","Active 8m ago","Active yesterdey","Active 24m ago","Active now","Active 22m ado","Active yesterdey","Active 1h ago","Mantioned you in their story","Mantioned you in their story","Mantioned you in their story","Mantioned you in their story","Seen Fridey","Seen Fridey","Active 1h ago","Avtive now","Thanks 1w","Active yesterdey","Active yesterdey","Active now","Active yesterdey","Active 2h ago","Ha ho 3w","Seen","Tq Bro 3w","Thank you bhai",];
-  List c=["001.jpg","001.jpg","010.jpg","003.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","015.jpg","010.jpg","009.jpg","010.jpg","007.jpg","001.jpg","005.jpg","007.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","015.jpg","015.jpg","009.jpg","010.jpg","010.jpg",];
+  List c=["001.jpg","001.jpg","010.jpg","003.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","015.jpg","010.jpg","009.jpg","010.jpg","007.jpg","001.jpg","010.jpg","007.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","015.jpg","015.jpg","009.jpg","010.jpg","010.jpg",];
 
   Widget build(BuildContext context) {
     return MaterialApp (

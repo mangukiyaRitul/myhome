@@ -17,6 +17,14 @@ class _MyHomePageState extends State<MyHomePage> {
       'listview',
       'instagram',
       'insta',
+      'loveshayari',
+      'redio',
+      'Dialog',
+      'RR',
+      'animation',
+      'getanimation',
+      'font',
+      'listview2',
     ];
     return Scaffold(
       appBar: AppBar(title: Text('My App'),),
