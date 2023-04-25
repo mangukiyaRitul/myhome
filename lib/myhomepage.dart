@@ -25,6 +25,12 @@ class _MyHomePageState extends State<MyHomePage> {
       'getanimation',
       'font',
       'listview2',
+      'image',
+      'account',
+      'mytext',
+      'Myslider',
+      'MyComponrt',
+      'bulb',
     ];
     return Scaffold(
       appBar: AppBar(title: Text('My App'),),
