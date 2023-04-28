@@ -1,7 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:getwidget/components/button/gf_button.dart';
-import 'package:getwidget/size/gf_size.dart';
 import 'package:ritul/second.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 class RR extends StatefulWidget {

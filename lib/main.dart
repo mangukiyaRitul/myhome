@@ -8,10 +8,11 @@ import 'package:ritul/sudocu.dart';
 import 'package:ritul/tictac.dart';
 import 'Dialog.dart';
 import 'MyComponent.dart';
+import 'My_stak.dart';
+import 'RR.dart';
 import 'account.dart';
 import 'async.dart';
 import 'font.dart';
-import 'getwidget.dart';
 import 'image_capser.dart';
 import 'instagram.dart';
 import 'listview2.dart';
@@ -51,7 +52,7 @@ class _MyAppState extends State<MyApp> {
         'redio':(context) =>redio(),
         'Dialog':(context) =>dialog(),
         ' async':(context) => async(),
-        ' getanimation':(context) => getanimation(),
+        'RR':(context) => RR(),
         'font':(context) => font(),
         'listview2':(context) => listview2(),
         'image':(context) => image(),
@@ -60,6 +61,7 @@ class _MyAppState extends State<MyApp> {
         'Myslider':(context) => Myslider(),
         'MyComponrt':(context) => MyComponrt(),
         'bulb':(context) => bulb(),
+        'My_stack':(context) => My_stack(),
       },
       home:MyHomePage(),debugShowCheckedModeBanner: false,
     );

@@ -169,11 +169,11 @@ class _MyComponrtState extends State<MyComponrt> {
                             keyboardType: TextInputType.visiblePassword,
 
                         ),
-
                     SizedBox(
                       height: 20,
                     ),
                     Align(
+
                       alignment: Alignment.bottomRight,
                       child: Mybutton(onPressed: (){
                         if(formkey.currentState!.validate())
@@ -191,8 +191,18 @@ class _MyComponrtState extends State<MyComponrt> {
               ),
             ),
 
-          ],
+            // if(formkey.currentState!=null && formkey.currentState!.validate())
+              Card(
+                  child: Column(
+                    children: [
+                      Text("${Name.text}",style: TextStyle(color: Colors.amber)),
+                      Text("${Email.text}",style: TextStyle(color: Colors.amber)),
+                      Text("${Number.text}",style: TextStyle(color: Colors.amber)),
+                    ],
+                  ),
+                ),
 
+          ],
         ),
       ),
     );

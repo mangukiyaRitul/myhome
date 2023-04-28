@@ -2,17 +2,17 @@ import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 import 'package:rive/rive.dart';
 
-Future<List<XFile?>?> camera () async {
+Future<File?> camera () async {
 
   ImagePicker picker = ImagePicker();
 try{
 
- List<XFile?>photo = await picker.pickMultiImage();
+ XFile? photo = await picker.pickImage(source:ImageSource.camera);
   if(photo!=null)
   {
-    // File file = File(photo);
+    File file = File(photo!.path);
     print("path$photo");
-    return photo;
+    return file;
   }
   else
   {
@@ -23,12 +23,12 @@ try{
     return null;
 }
 }
-Future<File?> photo () async {
+Future<File?> photo ({required ImageSource imageSource}) async {
 
   ImagePicker picker = ImagePicker();
   try{
         XFile? photo = await picker.pickImage(
-         source: ImageSource.gallery,
+         source: imageSource,
     );
         if(photo!=null)
     {

@@ -1,6 +1,7 @@
 
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'classimagepikar.dart';
 
 class image extends StatefulWidget {
@@ -12,6 +13,8 @@ class image extends StatefulWidget {
 
 class _imageState extends State<image> {
     File? file ;
+    bool test =false;
+    int clik =0;
     List<File> list = [];
     List<bool> longpress = [];
     int Counter=0;
@@ -28,27 +31,57 @@ class _imageState extends State<image> {
                 children: [
                   ElevatedButton(
                       onPressed: () async {
-                        file = await photo();
+
+
+
+                        // if(list.length%2==0)
+                        // {
+                        //   file = await photo(imageSource: ImageSource.gallery);
+                        //       if(file != null)
+                        //         {
+                        //           list.add(file!);
+                        //         }
+                        // }
+                        // else
+                        //   {
+                        //     file = await photo(imageSource: ImageSource.camera);
+                        //     if(file != null)
+                        //     {
+                        //       list.add(file!);
+                        //     }
+                        //   }
+
+                        // list.isEmpty ?file = await photo(imageSource: ImageSource.gallery):file = await photo(imageSource: ImageSource.camera);
+
+                        if(clik==0)
+                            {
+                              file = await photo(imageSource: ImageSource.gallery);
+                            if(file != null)
+                              {
+                                list.add(file!);
+                                clik=1;
+                              }
+                          }
+                          else
+                            {
+                              file = await photo(imageSource: ImageSource.camera);
+                              if(file != null)
+                                {
+                                  list.add(file!);
+                                  clik=0;
+                                }
+
+                            }
                         setState(() {});
-                        // print("object${file!}");
-                        // print(file);
-                        // print("photo$photo");
                         print("List $list");
                         if(file!=null)
                           {
-                            list.add(file!);
+                            // list.add(file!);
                             longpress.add(false);
                           }
-                        // final SharedPreferences prefs = await SharedPreferences.getInstance();
-                        // await prefs.setStringList('dataTest', list.map((i) => i.toString()).toList());
-                        //
-                        // list = prefs.getStringList('dataTest')!.map((i) => int.parse(i)).cast<File>().toList();
-                        // final List<String>? items = prefs.getStringList('items');
-                        //
-                      //  print(list);
+
                         },
                       child: Text("Photo")),
-                  // if (file != null) Image.file(file!),
                    Row(
                      children: [
                        ElevatedButton(onPressed:  (){

@@ -69,7 +69,7 @@ class MyText extends StatelessWidget {
 
         focusedErrorBorder:OutlineInputBorder(
           borderRadius: BorderRadius.circular(25),
-          borderSide: BorderSide(width: 3,color: Colors.red.shade900 ),
+          borderSide: BorderSide(width: 2,color: Colors.red.shade900 ),
         ),
 
        errorStyle: TextStyle(
@@ -79,13 +79,13 @@ class MyText extends StatelessWidget {
 
         errorBorder:OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(width: 3,color: Colors.red.shade600 ),
+          borderSide: BorderSide(width: 2,color: Colors.red.shade600 ),
         ),
 
 
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(25),
-          borderSide: BorderSide(width: 3, color: Color(0xff6B728E)),
+          borderSide: BorderSide(width: 2, color: Color(0xff6B728E)),
         ),
       ),
     );

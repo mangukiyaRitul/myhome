@@ -21,8 +21,6 @@ class _MyHomePageState extends State<MyHomePage> {
       'redio',
       'Dialog',
       'RR',
-      'animation',
-      'getanimation',
       'font',
       'listview2',
       'image',
@@ -31,6 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
       'Myslider',
       'MyComponrt',
       'bulb',
+      'My_stack',
     ];
     return Scaffold(
       appBar: AppBar(title: Text('My App'),),
