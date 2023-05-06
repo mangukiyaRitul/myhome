@@ -49,7 +49,7 @@ class _imageState extends State<image> {
                         //     {
                         //       list.add(file!);
                         //     }
-                        //   }
+                        //
 
                         // list.isEmpty ?file = await photo(imageSource: ImageSource.gallery):file = await photo(imageSource: ImageSource.camera);
 
@@ -70,7 +70,6 @@ class _imageState extends State<image> {
                                   list.add(file!);
                                   clik=0;
                                 }
-
                             }
                         setState(() {});
                         print("List $list");
@@ -97,7 +96,7 @@ class _imageState extends State<image> {
                          print(list);
                        },child: Text("Delet (${Counter})")),
                        ElevatedButton(onPressed:  (){
-                           if(Counter>=0)
+                           if(Counter>0)
                            {
                                Counter--;
                            }

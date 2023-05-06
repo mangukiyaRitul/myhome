@@ -7,6 +7,7 @@ import 'package:ritul/redio.dart';
 import 'package:ritul/sudocu.dart';
 import 'package:ritul/tictac.dart';
 import 'Dialog.dart';
+import 'Fruitlist.dart';
 import 'MyComponent.dart';
 import 'My_stak.dart';
 import 'RR.dart';
@@ -42,6 +43,7 @@ class _MyAppState extends State<MyApp> {
       ),
 
       routes: {
+        'Flruitlist':(context) => Flruitlist(),
         'sudocu':(context) => sudocu(),
         'tictoc':(context) => tictoc(),
         'collingpage':(context) => collingpage(),

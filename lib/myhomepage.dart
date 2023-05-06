@@ -30,6 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
       'MyComponrt',
       'bulb',
       'My_stack',
+      'Flruitlist',
     ];
     return Scaffold(
       appBar: AppBar(title: Text('My App'),),
