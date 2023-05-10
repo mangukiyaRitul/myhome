@@ -6,6 +6,7 @@ import 'package:ritul/myhomepage.dart';
 import 'package:ritul/redio.dart';
 import 'package:ritul/sudocu.dart';
 import 'package:ritul/tictac.dart';
+import 'Bg_remove.dart';
 import 'Dialog.dart';
 import 'Fruitlist.dart';
 import 'MyComponent.dart';
@@ -43,6 +44,7 @@ class _MyAppState extends State<MyApp> {
       ),
 
       routes: {
+        'RemoveBackground':(context) => RemoveBackground(),
         'Flruitlist':(context) => Flruitlist(),
         'sudocu':(context) => sudocu(),
         'tictoc':(context) => tictoc(),

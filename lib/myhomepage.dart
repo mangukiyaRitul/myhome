@@ -11,6 +11,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     var arrpages =[
+      'RemoveBackground',
       'sudocu',
       'tictoc',
       'collingpage',
